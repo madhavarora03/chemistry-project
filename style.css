@@ -1,0 +1,51 @@
+*{
+    transition: all 0.3s;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    background-color:black;
+    color: white;
+
+}
+
+.top-bar{
+    font-family: 'Bruno Ace SC', cursive;
+    display: flex;
+    height:8vh;
+    align-items: center;
+    justify-content: space-between;
+    padding:10px 25px;
+}
+
+.top-bar a{
+    color:white;
+    text-decoration: none;
+    padding: 14px 16px;
+}
+
+#jump-links{
+    display: flex;
+}
+
+.top-bar a:hover{
+    color: tomato;
+}
+
+#get-started{
+    padding: 0px 25px;
+    margin-left: 12px;
+    font-family: 'Bruno Ace SC', cursive;
+    border: 1px solid white;
+    background-color: black;
+    color: white;
+    border-radius: 8px;
+}
+
+#get-started:hover{
+    color: black;
+    background-color: slateblue;
+    border:1px solid transparent;
+    cursor: pointer;
+}
