@@ -1,40 +1,40 @@
-*{
+* {
     transition: all 0.3s;
 }
 
-body{
+body {
     margin: 0;
     padding: 0;
-    background-color:black;
+    background-color: black;
     color: white;
 
 }
 
-.top-bar{
+.top-bar {
     font-family: 'Bruno Ace SC', cursive;
     display: flex;
-    height:8vh;
+    /* height:8vh; */
     align-items: center;
     justify-content: space-between;
-    padding:10px 25px;
+    padding: 10px 25px;
 }
 
-.top-bar a{
-    color:white;
+.top-bar a {
+    color: white;
     text-decoration: none;
     padding: 14px 16px;
 }
 
-#jump-links{
+.jump-links {
     display: flex;
 }
 
-.top-bar a:hover{
+.top-bar a:hover {
     color: tomato;
 }
 
-#get-started{
-    padding: 0px 25px;
+#get-started {
+    padding: 5px 20px;
     margin-left: 12px;
     font-family: 'Bruno Ace SC', cursive;
     border: 1px solid white;
@@ -43,9 +43,71 @@ body{
     border-radius: 8px;
 }
 
-#get-started:hover{
+#get-started:hover {
     color: black;
-    background-color: slateblue;
-    border:1px solid transparent;
+    background-color: rgb(101, 123, 212);
+    border: 1px solid transparent;
     cursor: pointer;
+}
+
+.icon {
+    position: fixed;
+    top: 0;
+    right: 0;
+    display: none;
+}
+
+@media screen and (max-width: 600px) {
+    .icon {
+        display: block;
+    }
+
+    .jump-links {
+        /* display: none; */
+        position:absolute;
+        opacity: 0;
+        text-align: center;
+        align-items: center;
+        width: 100vw;
+    }
+
+    .top-bar {
+        flex-direction: column;
+    }
+
+    .active {
+        background-color: tomato;
+        position: static;
+        opacity: 1;
+        transition: opacity 1s linear;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .active a {
+        width: 94.5%;
+        color: black;
+        padding: 8px 14px;
+    }
+
+    .active a:hover {
+        background-color: rgb(242, 86, 58);
+        /* width:100vw; */
+        color: white;
+        padding: 14px 16px;
+    }
+
+    #get-started {
+        width: 100vw;
+        margin: 0;
+        border: none;
+        background-color: green;
+        border-radius: 0%;
+        padding: 8px;
+    }
+
+    #get-started:hover {
+        border: none;
+        padding: 14px 16px;
+    }
 }
