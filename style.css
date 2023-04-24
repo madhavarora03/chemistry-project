@@ -2,12 +2,36 @@
     transition: all 0.3s;
 }
 
+.button-default{
+    padding: 15px 20px;
+    font-size: larger;
+    margin-left: 14px;
+    /* font-family: 'Bruno Ace SC', cursive; */
+    border: 1px solid transparent;
+    background-color: rgb(253,98,98);
+    color: rgb(20,21,23);
+    border-radius: 8px;
+}
+
+.button-default:hover{
+    color: white;
+    background-color: rgb(20,21,23);
+    border: 1px solid white;
+    cursor: pointer;
+}
+
 body {
     margin: 0;
     padding: 0;
-    background-color: black;
+    background-color: rgb(20,21,23);
     color: white;
 
+}
+
+.content h1{
+    font-size: 75px;
+    padding: 14px 16px;
+    font-family: 'Bruno Ace', cursive;
 }
 
 .top-bar {
@@ -20,7 +44,7 @@ body {
 }
 
 .top-bar a {
-    color: white;
+    color: white;font-size: small;
     text-decoration: none;
     padding: 14px 16px;
 }
@@ -30,7 +54,7 @@ body {
 }
 
 .top-bar a:hover {
-    color: tomato;
+    color: rgb(253,98,98);
 }
 
 #get-started {
@@ -38,13 +62,19 @@ body {
     margin-left: 12px;
     font-family: 'Bruno Ace SC', cursive;
     border: 1px solid white;
-    background-color: black;
+    background-color: rgb(20,21,23);
     color: white;
     border-radius: 8px;
 }
+.content{
+    height:100vh;
+    background-image: url(images/background.png);
+    background-position: top;
+    background-size: cover;
+}
 
 #get-started:hover {
-    color: black;
+    color: rgb(20,21,23);
     background-color: rgb(101, 123, 212);
     border: 1px solid transparent;
     cursor: pointer;
@@ -78,7 +108,7 @@ body {
     }
 
     .active {
-        background-color: tomato;
+        background-color: rgb(253,98,98);
         position: static;
         opacity: 1;
         transition: opacity 1s linear;
@@ -93,7 +123,7 @@ body {
     }
 
     .active a:hover {
-        background-color: rgb(242, 86, 58);
+        background-color: rgb(225, 80, 80);
         /* width:100vw; */
         color: white;
         padding: 14px 16px;
